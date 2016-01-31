@@ -1,0 +1,115 @@
+/***************************
+	Inherited Styles
+***************************/
+
+html {
+	box-sizing: border-box;
+	font-family: "Arial", "Helvetica";
+	font-size: 24px;
+	color: #FDFDFB;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+	font: inherit;
+	color: inherit;
+}
+
+/***************************
+	Defaults
+***************************/
+
+body {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.fa {
+	font-size: 3em;
+}
+
+h1 {
+	text-align: center;
+	font-family: "Tangerine", "cursive";
+	font-size: 5em;
+}
+
+/***************************
+	Components
+***************************/
+
+.header-primary {
+	background-image: url("images/streetlamp1b.jpg");
+	background-size: cover;
+	min-height: 100vh;
+	margin-bottom: -80px;
+}
+
+.header-primary nav {
+	padding-top: 30px;
+}
+
+.header-primary nav a {
+	margin-left: 30px;
+}
+
+.header-primary h1 {
+	text-align: right;
+	margin-right: 30px;
+}
+
+.mid-section {
+	height: 500px;
+	/*background-color: #FDFDFB;*/
+	background-image: url("images/wood-bg.jpg");
+}
+
+.gallery-primary img {
+	padding-top: 40px;
+}
+
+.gallery-primary img:nth-child(1) {
+	margin-left: 30px;
+}
+
+/* .slider {
+	height: 50px;
+	-webkit-flex: 1 6 20%;
+	        flex: 1 6 20%;
+	-webkit-order: 1;
+	        order: 1;
+}*/
+/* .slider img {
+	width: 50px;
+
+}*/
+
+.bottom-section {
+	background-image: url("images/restaurant1b.jpg");
+	background-size: cover;
+	min-height: 100vh;
+	border-top: 100px solid #0D1018;
+	border-bottom: 100px solid #0D1018;
+}
+
+.bottom-section h1 {
+	padding-top: 50px;
+	margin-top: -20px;
+	float: right;
+	padding-right: 30px;
+}
+
+.bottom-section .question:hover {
+	color: yellow;
+}
+
+@media all and (min-width: 1400px) {
+	h1 {
+		color: yellow;
+	}
+
+ }
