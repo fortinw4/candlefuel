@@ -1,7 +1,3 @@
-/***************************
-	Inherited Styles
-***************************/
-
 html {
 	box-sizing: border-box;
 	font-family: "Arial", "Helvetica";
@@ -15,9 +11,11 @@ html {
 	color: inherit;
 }
 
-/***************************
-	Defaults
-***************************/
+
+/*****************************
+	For Mobile Devices
+*****************************/
+
 
 body {
 	margin: 0;
@@ -32,11 +30,13 @@ a {
 	font-size: 3em;
 }
 
-h1 {
+h1, {
 	text-align: center;
 	font-family: "Tangerine", "cursive";
 	font-size: 5em;
 }
+
+
 
 /***************************
 	Components
@@ -44,9 +44,7 @@ h1 {
 
 .header-primary {
 	background-image: url("images/streetlamp1b.jpg");
-	background-size: cover;
-	min-height: 100vh;
-	margin-bottom: -80px;
+	padding-bottom: 100px;
 }
 
 .header-primary nav {
@@ -54,62 +52,122 @@ h1 {
 }
 
 .header-primary nav a {
-	margin-left: 30px;
+	display: block;
+	font-size: 2em;
+	margin: 50px 0 0 10px;
 }
 
 .header-primary h1 {
 	text-align: right;
 	margin-right: 30px;
+	font-family: "Tangerine", "cursive";
+	margin-top: 0;
+	padding-top: 50px;
+	font-size: 3.5em;
+	display: block;
 }
 
 .mid-section {
 	height: 500px;
-	/*background-color: #FDFDFB;*/
 	background-image: url("images/wood-bg.jpg");
 }
 
+.gallery-primary .slider {
+	display: none;
+}
+
 .gallery-primary img {
-	padding-top: 40px;
+	padding-top: 140px;
 }
 
 .gallery-primary img:nth-child(1) {
 	margin-left: 30px;
 }
 
-/* .slider {
-	height: 50px;
-	-webkit-flex: 1 6 20%;
-	        flex: 1 6 20%;
-	-webkit-order: 1;
-	        order: 1;
-}*/
-/* .slider img {
-	width: 50px;
-
-}*/
-
 .bottom-section {
 	background-image: url("images/restaurant1b.jpg");
 	background-size: cover;
-	min-height: 100vh;
+	min-height: 540px;
 	border-top: 100px solid #0D1018;
 	border-bottom: 100px solid #0D1018;
 }
 
-.bottom-section h1 {
+.bottom-section a {
 	padding-top: 50px;
 	margin-top: -20px;
 	float: right;
 	padding-right: 30px;
+	text-align: center;
+	font-family: "Tangerine", "cursive";
+	font-size: 3em;
 }
 
 .bottom-section .question:hover {
 	color: yellow;
 }
 
-@media all and (min-width: 1400px) {
-	h1 {
-		color: yellow;
+
+
+/*****************************
+	For Tablets
+*****************************/
+
+
+
+
+/*****************************
+	For Desktop
+*****************************/
+
+@media only screen and (min-width: 768px){
+
+
+
+	/***************************
+		Components
+	***************************/
+
+	.header-primary {
+		background-size: cover;
+		min-height: 100vh;
 	}
 
- }
+	.header-primary h1 {
+		font-size: 5em;
+		display: inline-block;
+		float: right;
+	}
+
+	.header-primary nav a {
+		margin-left: 30px;
+		display: inline-block;
+        font-size: 1em;
+        transform: translate(0, -50px);
+	}
+
+	.mid-section {
+		height: 500px;
+		background-image: url("images/wood-bg.jpg");
+	}
+    
+    .gallery-primary .slider {
+    	display: block;
+    }
+
+	.gallery-primary img {
+		padding-top: 40px;
+	}
+
+	.gallery-primary img:nth-child(1) {
+		margin-left: 30px;
+	}
+    
+    .bottom-section {
+    	min-height: 100vh;
+    }
+
+    .bottom-section a {
+    	font-size: 4em;
+    	display: inline-block;
+    }
+}

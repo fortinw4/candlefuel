@@ -23,4 +23,3 @@ $(function(){
 		$('.question').show();
 	})
 });
-
