@@ -113,7 +113,7 @@ h1, {
 .bottom-section img {
 	height: 30%;
 	width: 30%;
-	margin: 38px 0 96px -26px;
+	margin: 38px 0 96px 0;
 }
 
 
@@ -171,7 +171,7 @@ h1, {
 	.bottom-section .answer {
 		font-size: 4em;
 	}
-	
+
     .bottom-section a {
     	display: inline-block;
     }
