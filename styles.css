@@ -168,14 +168,15 @@ h1, {
     	min-height: 100vh;
     }
 
+	.bottom-section .answer {
+		font-size: 4em;
+	}
+	
     .bottom-section a {
-    	font-size: 4em;
     	display: inline-block;
     }
 
     .bottom-section img {
-    	height: 100%;
-    	width: 100%;
     	margin-top: 60px;
     }
 }
