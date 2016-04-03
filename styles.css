@@ -84,6 +84,12 @@ h1, {
 	margin-left: 30px;
 }
 
+.gallery-primary .primary-img-m {
+	width: 90%;
+	height: 90%;
+	margin: 0 0 20px 0;
+}
+
 .bottom-section {
 	background-image: url("images/restaurant1b.jpg");
 	background-size: cover;
@@ -162,6 +168,10 @@ h1, {
 
 	.gallery-primary img:nth-child(1) {
 		margin-left: 30px;
+	}
+
+	.gallery-primary .primary-img-m {
+		display: none;
 	}
     
     .bottom-section {
